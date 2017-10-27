@@ -1,0 +1,72 @@
+.headerelement1
+{
+    float: left;
+    background-color: black;
+    padding-top: 15px;
+}
+
+.headerelement2
+{
+    color: red;
+    background-color: black;
+    margin-left: 400px;
+    margin-top: -10px;
+}
+
+.headerelement3
+{
+    float: right;
+    margin-top: -50px;
+}
+
+.mainheader
+{
+    background-color: black;
+    height: 100px;
+}
+
+img
+{
+    height: 70px;
+    width: 250px;
+}
+
+button
+{
+    margin: 20px;
+    height: 50px;
+    width:  100px;
+    margin-top: -5px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover
+{
+    background-color: #232426;
+}
+
+footer{
+    padding: 10px;
+    background-color: #101010;
+    color:#9d9d9d;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+
+.uppernav
+{
+    font-size: 30px;
+}
+
+
+#slideshow{ 
+    padding-left: 500px;
+}
+
+.insideslideshow
+{
+    width: 4px;
+}
