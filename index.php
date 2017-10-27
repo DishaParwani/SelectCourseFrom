@@ -16,7 +16,7 @@
         ?>
         
          <nav class="navbar ">
-            <div class="container">
+            <div class="container-fluid">
                 <ul class="nav nav-tabs uppernav">
                     <li class="active">
                         <a href="index.php">
