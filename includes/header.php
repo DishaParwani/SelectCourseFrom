@@ -7,7 +7,7 @@
 <h1>SELECT COURSE FROM Pvt Ltd</h1>
     </div>
     <div class="headerelement3">
-        <a href="#"><button>Login</button></a>
-        <a href="#"><button>Signup</button></a>
+        <a href="#"><button class="logsign">Login</button></a>
+        <a href="#"><button class="logsign">Signup</button></a>
     </div>
 </div>
