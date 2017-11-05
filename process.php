@@ -23,7 +23,7 @@ $Password = $_POST['Password'];
 //$password = mysql_real_escape_string($password); // does not consider special charaters in sql queries
 
 //connect to databse
-$conn = mysqli_connect("localport","root","");   //host,username,password
+$conn = mysqli_connect("localhost","root","");   //host,username,password
 mysql_select_db("login");
 
 //query the databse for user
