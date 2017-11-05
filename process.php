@@ -29,9 +29,7 @@ mysqli_select_db($conn,"dbslab");
 //query the databse for user
 $result = $conn->query("select * from users where Email = '$Email' and DOB ='$Password'") 
                          or die("Failed to query the database!".mysql_error()); //exits current script
-
-$row=$result->fetch_assoc();
-            
+$row=mysqli_fetch_assoc($result);
 if($row['Email'] == $Email && $row['DOB'] == $Password )
     {
     echo "login success!welcome".$row['Email'];
