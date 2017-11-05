@@ -24,14 +24,14 @@ and open the template in the editor.
         ?>
         <div class="container">
             <center>
-                
-                <div class="col-md-4" style="background-color: yellow"></div>
+                <div class="row" style="margin-top: 200px">
+                <div class="col-md-4" style="background-color: yellow;"></div>
                     <div class="col-md-4">
                         <a href="#"><button type="button" class="btn btn-default">Go to Course Enrollment</button></a>
                         <a href="#"><button type="button" class="btn btn-default">Go to Hostel Booking</button></a>
                     </div>
                     <div class="col-md-4"></div>
-                
+                </div>
             </center>
         </div>
         <?php
