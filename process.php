@@ -15,7 +15,7 @@
 //get values
 $Email = $_POST['Email'];
 $Password = $_POST['Password'];
-//prevent mysql injections
+//prevent myppsql injections
 //$email = stripcslashes($email);
 //$password = stripcslashes($password); //removes back slashes
 
@@ -32,7 +32,7 @@ $result = $conn->query("select * from users where Email = '$Email' and DOB ='$Pa
 
 $row=$result->mysqli_fetch_assoc();
             
-if($row['Email'] == $Email && $row['DOB'] == $Password)
+if($row['Email'] == $Email && $row['DOB'] == $Password )
     {
     echo "login success!welcome".$row['Email'];
 }
