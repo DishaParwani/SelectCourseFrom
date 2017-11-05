@@ -26,14 +26,14 @@ and open the template in the editor.
                        
                     </div>
                     <hr>
-                    <form class="form-horizontal" style="margin-left: 50px;">
+                    <form class="form-horizontal" style="margin-left: 50px;" method="POST" action="process.php">
                         <div class="form-group input-group">
                             <span class="input-group-addon">
                                 
                                 <span class="glyphicon glyphicon-user"></span>
                                 
                             </span>
-                            <input type="email" class="form-control" name="Email" placeholder="Enter email" required>                        
+                            <input type="email" class="form-control" name="Email" placeholder="Enter email"  required>                        
                        </div>
                         <div class="form-group input-group">
                             <span class="input-group-addon">
