@@ -9,7 +9,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>Login</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
         <?php
@@ -37,27 +37,27 @@ and open the template in the editor.
                     <hr>
                     <form class="form-horizontal" style="margin-left: 50px;" method="POST">
                         <div class="form-group input-group">
-                            <label class="control-label col-sm-2" for="name">Name:</label>
-                            <div class="col-sm-10">
+                            <label class="control-label col-sm-4" for="name">Name:</label>
+                            <div class="col-sm-8">
                                 <input type="text" class="form-control" name="Name" placeholder="Enter Name"  required>
                             </div>
                        </div>
                         <div class="form-group input-group">                            
-                            <label class="control-label col-sm-2" for="email">Email:</label>
-                            <div class="col-sm-10">
+                            <label class="control-label col-sm-4" for="email">Email:</label>
+                            <div class="col-sm-8">
                                 <input type="email" class="form-control" name="Email" placeholder="Enter Email" required>
                             </div>
                          </div>
                         <div class="form-group input-group">                            
-                            <label class="control-label col-sm-2" for="phone">Phone:</label>
-                            <div class="col-sm-10">
+                            <label class="control-label col-sm-4" for="phone">Phone:</label>
+                            <div class="col-sm-8">
                                 <input type="tel" class="form-control" name="Phone" placeholder="Enter Mobile number" required>
                             </div>
                          </div>
                         
                         <div class="form-group input-group">                            
                             <label class="control-label col-sm-2" for="gender">Sex:</label>
-                            <div class="col-sm-10" id="radio">
+                            <div style="margin-top: 1px" class="col-sm-10" id="radio">
                                 
                                 
                                 <input type="radio" name="gender" id="male" value="male" />
@@ -75,15 +75,15 @@ and open the template in the editor.
                                 </div>
                         
                         <div class="form-group input-group">                            
-                            <label class="control-label col-sm-2" for="dob">Birth-day:</label>
-                            <div class="col-sm-10">
-                                <input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy" required>
+                            <label class="control-label col-md-4" for="dob">Birth date:</label>
+                            <div class="col-md-8">
+                                <input style="margin-left: 10px" type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy" required>
                             </div>
                          </div>
                         <div class="form-group input-group">                            
-                            <label class="control-label col-sm-2" for="course">Course:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="course" placeholder="exact course name" required>
+                            <label class="control-label col-sm-4" for="course">Course:</label>
+                            <div class="col-sm-8">
+                                <input  style="margin-left: 15px"type="text" class="form-control" name="course" placeholder="exact course name" required>
                             </div>
                          </div>
                         
