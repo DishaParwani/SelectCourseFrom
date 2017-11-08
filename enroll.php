@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+$con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con));
+session_start();
+?>
+<!DOCTYPE HTML>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -17,12 +21,12 @@
          <nav class="navbar ">
             <div class="container">
                 <ul class="nav nav-tabs uppernav">
-                    <li class="active">
+                    <li>
                         <a href="index.php">
                             Home
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="courses.php">
                             Courses
                         </a>
@@ -45,26 +49,31 @@
                 </ul>
                 </div>
          </nav>
-        <div id="slideshow">
-            <div class="insideslideshow">
-       <img src="images/image1.jpg">
-   </div>
-            <div class="insideslideshow">
-       <img src="images/image2.jpg">
-   </div>
-</div>
-
-        <h2>About Us</h2>
-        <p>SCF is the largest training company in India with over 20 years of experience in the field of education. SCF has a dedicated team of 3 team members which provide the quality trainings across the country. SCF conducts trainings for students from best of the Institutions of the country . Over 25,000 students get trained by us every year. 
-We provide Courses for Engineering and Non Engineering Stream like Computer Science, Information Technology, Mechanical, Civil, M.Sc. I.T , B.Sc.IT etc. and Programs like Summer Training , Winter Training, Project Training, College Training to Suit students round the year requirements. Android,AutoCAD 2D and 3D ,Embedded and Robotics, Java, .NET Framework are few the Courses available with us.</p>
-
-<h2>More Information</h2>
-<p>To our students, we impart value-based career education, abundant resources, and individual attention. To the parents, we have a responsibility to nurture ethical and responsible career leadership in the children. To the society, we provide a lifelong connection to ethics and excellence in global leaders.
-</p>
-<br><br>
-
-        <?php
-        include 'includes/footer.php'
+        <?php 
+        $coursename = $_SESSION['coursedata'];
+        $query = "select * from dbslab.courses where course_id = $coursename ";
+        $result = mysqli_query($con, $query)or die($mysqli_error($con));
+        if (mysqli_num_rows($result) >= 1) {
+            while ($row = mysqli_fetch_array($result)) {
         ?>
+    <center>
+        <div class="course_header">
+        <p>Course_id : <?php $row["course_id"] ?></p>
+        <p>Course Name : <?php $row["cname"] ?></p>
+        <p>Price : <?php $row["price"]?></p>
+        </div>
+    </center><br><br>
+    <?php }} ?>
+    
+    <div class="enroll_form">
+        <center>
+            <h3>Course Options</h3>
+        </center>
+        <form class='form-group formwidth' method="post" action="">
+            <input type='text' placeholder="Address" class='form-control' name="address"><br>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+        
+    </div>
     </body>
 </html>

@@ -12,11 +12,11 @@ and open the template in the editor.
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="style.css" type="text/css">
         <link rel="stylesheet" href="style2.css" type="text/css">
-        <title>Registration Successful!</title>
+        <title>Payment</title>
     </head>
     <body>
         <?php
-        include 'includes/header.php'
+        include './includes/header.php';
         ?>
         <div class="left">
             <div class="header-left">
@@ -25,7 +25,7 @@ and open the template in the editor.
             </div>
             <div class="developed"></div>
             <div class="MU">
-                <p id="top" style="color: white;size: 100%; margin-top: 30px">You have successfully completed your course registration</p>
+                <p id="top" style="color: white;size: 100%; margin-top: 30px; padding-right: 100px">Select Payment Mode</p>
             </div>
             <div class="developed">
                 <div class="content">
@@ -40,10 +40,11 @@ and open the template in the editor.
             <div class="login">
                 <br>
                 <br>
-                <h1 style="color:#CF4747">PROCEED <br> _________________</h1><br><br>
-                <form action="AfterRegTest.php" method="post">
-                    <input type="submit" name="proceed" value="COURSE SELECTION" style="background-color: #CF4747; height: 40px; width: 200px; margin: 15px"/><br>
-                    <input type="submit" name="proceed" value="HOSTEL BOOKING"style="background-color: #CF4747; height: 40px; width: 200px; margin: 15px"/><br>
+                <h1 style="color:#CF4747">SELECT <br> _________________</h1><br><br>
+                <form action="paymentTest.php" method="post">
+                    <label class="radio-inline" style="color: white"><input type="radio" name="payment" value="ccavenue">CC Avenue</label>
+                    <label class="radio-inline" style="color: white"><input type="radio" name="payment" value="dd">Demand Draft</label>
+                    <input type="submit" name="proceed" value="PROCEED"style="background-color: #CF4747; height: 40px; width: 200px; margin: 15px"/><br>
                 </form>
             </div>
         </div>

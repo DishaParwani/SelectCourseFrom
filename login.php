@@ -46,22 +46,12 @@ and open the template in the editor.
                         <div class="form-group">
                             <button class="btn btn-primary" style="width: 425px; margin-left: 5px;">Login</button>                         
                          </div>
-                    </form>
-                    
+                    </form>       
                </div>
             </div>
     </div>
-        
-        
-        
-        
-                
-        
         <?php
-        // put your code here
-        
         include 'includes/footer.php'
-        
         ?>
     </body>
 </html>
