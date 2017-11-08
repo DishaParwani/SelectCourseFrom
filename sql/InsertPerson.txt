@@ -1,0 +1,5 @@
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `InsertPerson`(IN `name` VARCHAR(50), IN `email` VARCHAR(100), IN `phone` BIGINT(10), IN `gender` VARCHAR(1), IN `dob ` VARCHAR(10))
+    NO SQL
+INSERT INTO registration VALUES (name, email, phone, gender, dob)$$
+DELIMITER ;
