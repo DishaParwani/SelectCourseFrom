@@ -53,13 +53,13 @@ and open the template in the editor.
                             <div style="margin-top: 1px" class="col-sm-8" id="radio">
                                 
                                 
-                                <input type="radio" name="gender" id="male" value="Male" />
+                                <input type="radio" name="gender" id="male" value="M" />
                                 <label for="male">Male
                                 </label>
-                                <input type="radio" name="gender" id="female" value="Female"/>
+                                <input type="radio" name="gender" id="female" value="F"/>
                                <label for="female">Female
                                </label>  
-                               <input style="margin-left:54.9px" type="radio" name="gender" id="Others" value="others" />
+                               <input style="margin-left:54.9px" type="radio" name="gender" id="Others" value="O" />
                                 <label for="others">Others
                                 </label>
                                 

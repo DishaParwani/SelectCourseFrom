@@ -16,7 +16,8 @@ $dob=$_POST['dob'];
 $gender=$_POST['gender'];
 $course=$_POST['course'];
 
-$sql = "INSERT INTO users VALUES ('$Name', '$Email', '$Phone','$gender','$dob','$course')";
+
+$sql = "CALL InsertPerson('$Name','$Email',$Phone,'$gender','$dob','$course')";
 if(mysqli_query($conn, $sql)){
     echo "Records inserted successfully.";
 } else{
