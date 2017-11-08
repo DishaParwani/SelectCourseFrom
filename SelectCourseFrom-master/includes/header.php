@@ -8,7 +8,7 @@
     </div>
     <div class="headerelement3">      
             <a href="login.php"><button class="logsign">Login</button></a>
-        <a href="signup.php"><button class="logsign">Signup</button></a>
+        <a href="#"><button class="logsign">Signup</button></a>
          </div>
 </div>
 
