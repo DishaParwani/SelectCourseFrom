@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2017 at 10:56 PM
+-- Generation Time: Nov 08, 2017 at 11:06 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -31,6 +31,27 @@ CREATE TABLE `teaches` (
   `id` int(11) NOT NULL,
   `cours_duration` int(11) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `teaches`
+--
+
+INSERT INTO `teaches` (`course_id`, `id`, `cours_duration`) VALUES
+(1, 1, 30),
+(2, 1, 30),
+(5, 2, 60),
+(8, 2, 30),
+(4, 2, 45),
+(7, 3, 30),
+(6, 3, 45),
+(1, 4, 30),
+(8, 4, 45),
+(4, 4, 30),
+(5, 5, 60),
+(8, 5, 30),
+(7, 5, 45),
+(3, 6, 45),
+(6, 6, 60);
 
 --
 -- Indexes for dumped tables
