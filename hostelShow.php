@@ -19,6 +19,9 @@ and open the template in the editor.
         include 'includes/header.php';
             if(isset($_POST['gender']))
                 $a=$_POST['gender'];
+            //$con=  mysqli_connect("localhost", "root", "", "dbslab");
+            //$query="select * from hostel where htype=$a";
+            //$result=$con->query($query) or exit($con->errno);
         ?>
         <div class="container">
         <div class="scrollable des" style="margin-top: 50px;">
@@ -27,12 +30,10 @@ and open the template in the editor.
                     <tr class="des">
                         <th>Block Number</th>
                         <th>Block Name</th>
-                        <th>Cost</th>
+                        <th>Cost Per Month</th>
                         <th>Operation</th>
                     </tr>
-                    <tr>
-                        
-                    </tr> 
+                    
                 </tbody>
             </table>
         </div>
