@@ -41,7 +41,7 @@ and open the template in the editor.
                     <td><?php echo $row["block_no"]?></td>  
                     <td><?php echo $row["bname"]?></td>
                     <td><?php echo $row["cost"]?></td>
-                    <td><form action="hostelBook.php" method="post">
+                    <td><form action="payment.php" method="post">
                             <input type="submit" value="Book" style="background-color: #CF4747"/>
                             <input type="hidden" name="blnum" value=<?php echo $row["block_no"] ?> />
                             </form></td>

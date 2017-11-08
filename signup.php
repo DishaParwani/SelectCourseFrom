@@ -82,17 +82,8 @@ and open the template in the editor.
                </div>
             </div>
     </div>
-        
-        
-        
-        
-                
-        
         <?php
-        // put your code here
-        
         include 'includes/footer.php'
-        
         ?>
     </body>
 </html>
