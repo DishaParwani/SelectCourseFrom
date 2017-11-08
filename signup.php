@@ -14,7 +14,7 @@ and open the template in the editor.
     <body>
         <?php
         include 'includes/header.php';
-                include_once ('process_signup.php');
+        include_once ('process_signup.php');
                 if(isset($_POST['submit'])){
                     $Name=$_POST['Name'];
                     $Email=$_POST['Email'];
