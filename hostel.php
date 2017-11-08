@@ -18,7 +18,7 @@ and open the template in the editor.
         <?php
         include 'includes/header.php';
         ?>
-        <div class="left">
+        <div class="left" style="background-color: whitesmoke">
             <div class="header-left">
             </div>
             <div class="bar-left">
@@ -32,7 +32,7 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-        <div class="right">
+        <div class="right" style="background-color: whitesmoke">
             <div class="header-right">
             </div>
             <div class="bar-right">
