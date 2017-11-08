@@ -24,7 +24,7 @@ and open the template in the editor.
             <div class="bar-left">
             </div>
             <!--<div class="developed"></div>-->
-            <div class="developed" style="height: 425px; background-color:  #48b728  ">
+            <div class="developed" style="height: 390px; background-color:  #48b728  ">
                 <br>
                 <br>
                 <h3 style="color:#25303A;text-align: center">You have successfully registered for the course. To register for another course click the button below <br> _________________</h3><br><br>
