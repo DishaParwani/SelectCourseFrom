@@ -77,3 +77,10 @@ footer{
 {
     width: 4px;
 }
+
+.course_header
+{
+    background-color: black;
+    color: white;
+    font-size: 50px;
+}

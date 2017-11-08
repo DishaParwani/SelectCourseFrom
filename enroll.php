@@ -56,15 +56,24 @@ session_start();
         if (mysqli_num_rows($result) >= 1) {
             while ($row = mysqli_fetch_array($result)) {
         ?>
+    <center>
+        <div class="course_header">
         <p>Course_id : <?php $row["course_id"] ?></p>
         <p>Course Name : <?php $row["cname"] ?></p>
         <p>Price : <?php $row["price"]?></p>
+        </div>
+    </center><br><br>
+    <?php }} ?>
+    
+    <div class="enroll_form">
+        <center>
+            <h3>Course Options</h3>
+        </center>
+        <form class='form-group formwidth' method="post" action="">
+            <input type='text' placeholder="Address" class='form-control' name="address"><br>
+            <button class="btn btn-primary">Submit</button>
+        </form>
         
-        
-        
-        <?php }} else {
-        
-        echo "<p>No courses selected!!</p>";
-        } ?>
+    </div>
     </body>
 </html>
