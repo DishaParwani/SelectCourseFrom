@@ -1,2 +1,0 @@
-# SelectCourseFrom
-Database LAB Project 

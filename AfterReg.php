@@ -23,14 +23,15 @@ and open the template in the editor.
             </div>
             <div class="bar-left">
             </div>
-            <div class="developed"></div>
-            <div class="MU">
-                <p id="top" style="color: white;size: 100%; margin-top: 30px">You have successfully completed your course registration</p>
-            </div>
-            <div class="developed">
-                <div class="content">
+            <!--<div class="developed"></div>-->
+            <div class="developed" style="height: 425px">
+                <br>
+                <br>
+                <h3 style="color:#25303A;text-align: center">You have successfully registered for the course. To register for another course click the button below <br> _________________</h3><br><br>
+                <form action="AfterRegTest.php" method="post" style="float: right">
+                    <input type="submit" name="proceed" value="COURSE SELECTION" style="background-color: #25303A;color: white; height: 40px; width: 200px;margin-right: 90px;margin-top: 15px"/><br>
+                    </form>
                 </div>
-            </div>
         </div>
         <div class="right">
             <div class="header-right">
@@ -40,9 +41,9 @@ and open the template in the editor.
             <div class="login">
                 <br>
                 <br>
-                <h1 style="color:#CF4747">PROCEED <br> _________________</h1><br><br>
+                <h3 style="color:#CF4747">Book a Hostel if you are a non-localite. To book a room click the button below <br><br> _________________</h3><br><br>
                 <form action="AfterRegTest.php" method="post">
-                    <input type="submit" name="proceed" value="COURSE SELECTION" style="background-color: #CF4747; height: 40px; width: 200px; margin: 15px"/><br>
+                    
                     <input type="submit" name="proceed" value="HOSTEL BOOKING"style="background-color: #CF4747; height: 40px; width: 200px; margin: 15px"/><br>
                 </form>
             </div>
