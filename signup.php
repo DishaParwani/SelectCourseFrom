@@ -7,27 +7,18 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Login</title>
+        <title>Sign Up</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
-        <?php
+      <?php
         include 'includes/header.php';
-                include_once ('process_signup.php');
-                
-                if(isset($_POST['submit'])){
-                    $Name=$_POST['Name'];
-                    $Email=$_POST['Email'];
-                    $Phone=$_POST['Phone'];
-                    $dob=$_POST['dob'];
-                    $gender=$_POST['gender'];
-                    $course=$_POST['course'];
-                }
-        ?>
+             
+       ?> 
         
         <div class="container">
-            <div class="col-sm-10" style="width: 600px; margin-left: 250px; margin-top: 50px;">
+            <div class="col-sm-15" style="width: 600px; margin-left: 250px; margin-top: 50px;">
                 <div class="jumbotron">
                     <div class="form-group" style="margin-top: -50px;">
                         <h1 style="margin-left: 150px;">
@@ -36,11 +27,12 @@ and open the template in the editor.
                        
                     </div>
                     <hr>
-                    <form class="form-horizontal" style="margin-left: 50px;" method="POST">
+                    <form class="form-horizontal" style="margin-left: 50px;" method="POST" action="process_signup.php">
                         <div class="form-group input-group">
                             <label class="control-label col-sm-4" for="name">Name:</label>
                             <div class="col-sm-8">
                                 <input type="text" class="form-control" name="Name" placeholder="Enter Name"  required>
+                              
                             </div>
                        </div>
                         <div class="form-group input-group">                            
@@ -57,17 +49,17 @@ and open the template in the editor.
                          </div>
                         
                         <div class="form-group input-group">                            
-                            <label class="control-label col-sm-2" for="gender">Sex:</label>
-                            <div style="margin-top: 1px" class="col-sm-10" id="radio">
+                            <label class="control-label col-sm-4" for="gender">Sex:</label>
+                            <div style="margin-top: 1px" class="col-sm-8" id="radio">
                                 
                                 
-                                <input type="radio" name="gender" id="male" value="male" />
+                                <input type="radio" name="gender" id="male" value="Male" />
                                 <label for="male">Male
                                 </label>
-                                <input type="radio" name="gender" id="female" value="female"/>
+                                <input type="radio" name="gender" id="female" value="Female"/>
                                <label for="female">Female
-                               </label>                                
-                                <input type="radio" name="gender" id="others" value="others" />
+                               </label>  
+                               <input style="margin-left:54.9px" type="radio" name="gender" id="Others" value="others" />
                                 <label for="others">Others
                                 </label>
                                 
@@ -84,7 +76,7 @@ and open the template in the editor.
                         <div class="form-group input-group">                            
                             <label class="control-label col-sm-4" for="course">Course:</label>
                             <div class="col-sm-8">
-                                <input  style="margin-left: 15px"type="text" class="form-control" name="course" placeholder="exact course name" required>
+                                <input  style="margin-left: 10px"type="text" class="form-control" name="course" placeholder="please enterexact course name" required>
                             </div>
                          </div>
                         
