@@ -10,22 +10,27 @@
     color: red;
     background-color: black;
     margin-left: 400px;
-    margin-top: 15px;
+    padding-top: 10px;
+    height: 85px;
 }
 
 .headerelement3
 {
     float: right;
-    margin-top: -50px;
+    margin-top: -85px;
+    padding-top: 30px;
+    height: 85px;
 }
 
 .mainheader
 {
-    background-color: blue;
+    background-color: black;
     margin-top: -20px;
+    padding-top: 10px;
+    padding-bottom:  10px;
 }
 
-img
+.header_img
 {
     height: 70px;
     width: 250px;
@@ -33,7 +38,9 @@ img
 
 .logsign
 {
-    margin: 20px;
+    margin-top:  20px;
+    margin-left:   20px;
+    margin-right:   20px;
     height: 50px;
     width:  100px;
     margin-top: -5px;
