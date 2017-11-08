@@ -19,9 +19,9 @@ and open the template in the editor.
         include 'includes/header.php';
             if(isset($_POST['gender']))
                 $a=$_POST['gender'];
-            //$con=  mysqli_connect("localhost", "root", "", "dbslab");
-            //$query="select * from hostel where htype=$a";
-            //$result=$con->query($query) or exit($con->errno);
+            $con=  mysqli_connect("localhost", "root", "", "dbslab");
+            $query="select * from hostel where htype='$a'";
+            $result=$con->query($query) or exit($con->errno);
         ?>
         <div class="container">
         <div class="scrollable des" style="margin-top: 50px;">
@@ -33,7 +33,22 @@ and open the template in the editor.
                         <th>Cost Per Month</th>
                         <th>Operation</th>
                     </tr>
-                    
+                    <?php
+                    while($row=$result->fetch_assoc())
+                    {
+                    ?>
+                    <tr>
+                    <td><?php echo $row["block_no"]?></td>  
+                    <td><?php echo $row["bname"]?></td>
+                    <td><?php echo $row["cost"]?></td>
+                    <td><form action="hostelBook.php" method="post">
+                            <input type="submit" value="Book" style="background-color: #CF4747"/>
+                            <input type="hidden" name="blnum" value=<?php echo $row["block_no"] ?> />
+                            </form></td>
+                    </tr>
+                    <?php
+                        }
+                    ?> 
                 </tbody>
             </table>
         </div>
