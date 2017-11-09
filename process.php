@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -27,12 +30,14 @@ $conn = mysqli_connect("localhost","root","");   //host,username,password
 mysqli_select_db($conn,"dbslab");
 
 //query the databse for user
-$result = $conn->query("select * from registration where Email = '$Email' and DOB ='$Password'") 
+$result = $conn->query("select * from registration where email = '$Email' and dob ='$Password'") 
                          or die("Failed to query the database!".mysql_error()); //exits current script
 $row=mysqli_fetch_assoc($result);
-if($row['Email'] == $Email && $row['DOB'] == $Password )
+if($row['email'] == $Email && $row['dob'] == $Password )
     {
-    echo "login success!welcome".$row['Email'];
+    echo "login success!welcome".$row['email'];
+    $_SESSION['loginname']=$row['name'];
+    header('Location: index.php');
 }
 else
 {

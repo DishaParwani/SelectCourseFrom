@@ -18,32 +18,63 @@ and open the template in the editor.
         <?php
         include 'includes/header.php';
         ?>
-        <div class="left" style="background-color: whitesmoke">
+        <nav class="navbar ">
+            <div class="container">
+                <ul class="nav nav-tabs uppernav">
+                    <li>
+                        <a href="index.php">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="courses.php">
+                            Courses
+                        </a>
+                    </li>
+                    <li  class="active">
+                        <a href="Hostel.php">
+                            Hostel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Gallery.php">
+                            Gallery
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="ContactUs.php">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                </div>
+         </nav>
+        <div class="left" style="background-color: white;margin-top: -60px">
             <div class="header-left">
             </div>
             <div class="bar-left">
             </div>
-            <div class="developed"></div>
-            <div class="MU">
-                <p id="top" style="color: white;size: 100%; margin-top: 40px;padding-right: 70px">SELECT GENDER TO PROCEED</p>
+            <div class="developed"style="background-color:  #48b728  "></div>
+            <div class="MU" style="background-color:  #62e03e ">
+                <p id="top" style="size: 100%; margin-top: 40px;padding-right: 50px">SELECT GENDER TO PROCEED</p>
             </div>
-            <div class="developed">
+            <div class="developed" style="background-color:  #48b728  ">
                 <div class="content">
                 </div>
             </div>
         </div>
-        <div class="right" style="background-color: whitesmoke">
+        <div class="right" style="background-color: white;margin-top: -60px">
             <div class="header-right">
             </div>
             <div class="bar-right">
             </div>
-            <div class="login">
+            <div class="login" style="background-color:  #294ca9 ">
                 <br>
                 <br>
-                <h1 style="color:#CF4747">GENDER <br> _________________</h1><br><br>
+                <h1 style="color:#48b728">GENDER <br> _________________</h1><br><br>
                 <form action="hostelShow.php" method="post">
-                    <input type="submit" name="gender" value="MALE" style="background-color: #CF4747; height: 40px; width: 200px; margin: 15px"/><br>
-                    <input type="submit" name="gender" value="FEMALE"style="background-color: #CF4747; height: 40px; width: 200px; margin: 15px"/><br>
+                    <input type="submit" name="gender" value="MALE" style="background-color: #48b728; height: 40px; width: 200px; margin: 15px"/><br>
+                    <input type="submit" name="gender" value="FEMALE"style="background-color: #48b728; height: 40px; width: 200px; margin: 15px"/><br>
                 </form>
             </div>
         </div>
