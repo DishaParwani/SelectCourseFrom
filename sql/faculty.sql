@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2017 at 10:42 PM
+-- Generation Time: Nov 09, 2017 at 12:46 PM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -45,7 +45,9 @@ INSERT INTO `faculty` (`id`, `name`, `location`, `dob`, `stdate`, `salary`) VALU
 (3, 'Daniyal', 'Kolkata', '1979-04-28', '2009-07-10', 150000),
 (4, 'Veena', 'Manipal', '1984-05-10', '2012-04-01', 200000),
 (5, 'Kamlesh', 'Bhopal', '2004-04-18', '2017-10-05', 120),
-(6, 'Charan', 'Kolkata', '1984-05-05', '2007-03-01', 1000000);
+(6, 'Charan', 'Kolkata', '1984-05-05', '2007-03-01', 1000000),
+(7, 'Nisha Shetty', 'Bhopal', '1987-04-21', '2015-03-06', 500000),
+(8, 'Vivek', 'Mumbai', '1992-04-10', '2015-08-19', 50000);
 
 --
 -- Indexes for dumped tables

@@ -46,7 +46,7 @@ and open the template in the editor.
                         <div class="form-group">
                             <button class="btn btn-primary" style="width: 425px; margin-left: 5px;">Login</button>    
                             <br><br>
-                            
+                            <p class="loginfailure">Invalid Email or Password !</p>
                             <a href="OTP.php"><p>Forgot Password</p></a>
                          </div>
                     </form>       

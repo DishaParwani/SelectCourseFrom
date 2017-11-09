@@ -41,7 +41,7 @@ if($row['email'] == $Email && $row['dob'] == $Password )
 }
 else
 {
-    echo "Please enter valid details!";
+    header('Location: login2.php');
 }
             
 
