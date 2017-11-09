@@ -83,8 +83,8 @@ session_start();
         </form>
         </center>
     </div>
-            <?php
+         <!--   <?php
         include 'includes/footer.php'
-        ?>
+        ?> -->
     </body>
 </html>
