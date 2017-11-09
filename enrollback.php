@@ -64,18 +64,20 @@ session_start();
     </center><br><br>
     <?php }} ?>
     
-    
+    <?php
+   $loc = $_SESSION['location'];
+   $query = "select * from dbslab.faculty where location = '$loc' ";
+   $result = mysqli_query($con, $query)or die($mysqli_error($con));
+    ?>
+
     <div class="enroll_form">
         <center>
             <h3><strong>Course Options</strong></h3><br><br>
-        <form class='form-group formwidth' method="post" action="enroll-script">
-            <select name="location" style="width: 500px; height: 30px;">
-                <option value="Select a Location">--Select a Location--</option>
-                <option value="Manipal">Manipal</option>
-                <option value="Mumbai">Mumbai</option>
-                <option value="Kolkata">Kolkata</option>
-                <option value="Bhopal">Bhopal</option>
-            </select>
+            <form class='form-group formwidth' method="post" action="payment.php">
+            <?php            if (mysqli_num_rows($result) >= 1) {
+            while ($row = mysqli_fetch_array($result)) {?>
+            <input type="radio"> Professor <?php echo $row['name']?><br>
+            <?php }} ?>
             <br><br><br>
             <button class="btn btn-primary">Submit</button>
         </form>
