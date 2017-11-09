@@ -1,6 +1,6 @@
 <?php
-$con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con));
 session_start();
+$con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con));
 ?>
 <!DOCTYPE HTML>
 <html>
