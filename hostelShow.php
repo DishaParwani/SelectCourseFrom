@@ -14,17 +14,52 @@ and open the template in the editor.
         <link rel="stylesheet" href="style2.css" type="text/css">
         <title>Hostel</title>
     </head>
-    <body style="background-color: #CF4747">
+    <body style="background-color: white">
         <?php
         include 'includes/header.php';
-            if(isset($_POST['gender']))
+            if(isset($_POST['gender'])){
                 $a=$_POST['gender'];
-            $con=  mysqli_connect("localhost", "root", "", "dbslab");
-            $query="select * from hostel where htype='$a'";
-            $result=$con->query($query) or exit($con->errno);
+                $con=  mysqli_connect("localhost", "root", "", "dbslab");
+                $query="select * from hostel where htype='$a'";
+                $result=$con->query($query) or exit($con->errno);
+                $flag=1;
+            }
+            else
+                $flag=0;
         ?>
+        <nav class="navbar ">
+            <div class="container">
+                <ul class="nav nav-tabs uppernav">
+                    <li>
+                        <a href="index.php">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="courses.php">
+                            Courses
+                        </a>
+                    </li>
+                    <li  class="active">
+                        <a href="Hostel.php">
+                            Hostel
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Gallery.php">
+                            Gallery
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="ContactUs.php">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                </div>
+         </nav>
         <div class="container">
-        <div class="scrollable des" style="margin-top: 50px;">
+        <div class="scrollable des" style="margin-top: 0px;background-color: #294ca9">
             <table class="table table-hover table-bordered table-responsive" >
                 <tbody>
                     <tr class="des">
@@ -34,6 +69,7 @@ and open the template in the editor.
                         <th>Operation</th>
                     </tr>
                     <?php
+                    if($flag==1){
                     while($row=$result->fetch_assoc())
                     {
                     ?>
@@ -42,12 +78,13 @@ and open the template in the editor.
                     <td><?php echo $row["bname"]?></td>
                     <td><?php echo $row["cost"]?></td>
                     <td><form action="payment.php" method="post">
-                            <input type="submit" value="Book" style="background-color: #CF4747"/>
+                            <input type="submit" value="Book" style="background-color: #48b728"/>
                             <input type="hidden" name="blnum" value=<?php echo $row["block_no"] ?> />
                             </form></td>
                     </tr>
                     <?php
                         }
+                    }
                     ?> 
                 </tbody>
             </table>

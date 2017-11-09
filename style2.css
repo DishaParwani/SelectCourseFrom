@@ -7,7 +7,7 @@ html, body {
 
 .des{
     color: white;
-    background-color: #252F39;
+    background-color: #294ca9;
 }
 
 li{
@@ -104,7 +104,7 @@ body {
     font-family: "Lato", sans-serif;
 }
 .scrollable {
-    margin-top: 50px;
-    height: 450px; /* or any value */
+    margin-top: 20px;
+    height: 250px; /* or any value */
     overflow-y: auto;
 }

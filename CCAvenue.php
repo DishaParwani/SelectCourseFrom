@@ -20,7 +20,7 @@ and open the template in the editor.
        ?> 
         
         <div class="container">
-            <div class="col-sm-15" style="width: 600px; margin-left: 250px; margin-top: 50px;">
+            <div class="col-sm-15" style="width: 600px; margin-left: 250px; margin-top: 20px;">
                 <div class="jumbotron">
                     <div class="form-group" style="margin-top: -50px;">
                         <h1 style="margin-left: 50px;">

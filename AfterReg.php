@@ -18,7 +18,7 @@ and open the template in the editor.
         <?php
         include 'includes/header.php'
         ?>
-        <div class="left" style="background-color: whitesmoke">
+        <div class="left" style="background-color: white">
             <div class="header-left">
             </div>
             <div class="bar-left">
@@ -28,12 +28,12 @@ and open the template in the editor.
                 <br>
                 <br>
                 <h3 style="color:#25303A;text-align: center">You have successfully registered for the course. To register for another course click the button below <br> _________________</h3><br><br>
-                <form action="AfterRegTest.php" method="post" style="float: right">
+                <form action="courses.php" method="post" style="float: right">
                     <input type="submit" name="proceed" value="COURSE SELECTION" style="background-color:  #294ca9;color: white; height: 40px; width: 200px;margin-right: 90px;margin-top: 15px"/><br>
                 </form>
                 </div>
         </div>
-        <div class="right" style="background-color: whitesmoke">
+        <div class="right" style="background-color: white">
             <div class="header-right">
             </div>
             <div class="bar-right">
@@ -41,7 +41,7 @@ and open the template in the editor.
             <div class="login" style="background-color:  #294ca9 ">
                 <br>
                 <br>
-                <h3>Book a Hostel if you are a non-localite. To book a room click the button below <br><br> _________________</h3><br><br>
+                <h3>Book your desired Hostel for a better convenience. To book a room click the button below <br><br> _________________</h3><br><br>
                 <form action="AfterRegTest.php" method="post">
                     
                     <input type="submit" name="proceed" value="HOSTEL BOOKING"style="background-color: #48b728 ; height: 40px; width: 200px; margin: 15px"/><br>
