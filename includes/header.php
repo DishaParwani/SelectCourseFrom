@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <div class="mainheader">
     <div class="headerelement1">
         <img class="header_img" src="images/logo.jpg">
