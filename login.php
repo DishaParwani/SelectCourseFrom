@@ -47,7 +47,7 @@ and open the template in the editor.
                             <button class="btn btn-primary" style="width: 425px; margin-left: 5px;">Login</button>    
                             <br><br>
                             
-                            <a href="OTP.php"><p>Forgot Password</p></a>
+                            <a href="Enteremail.php"><p>Forgot Password</p></a>
                          </div>
                     </form>       
                </div>

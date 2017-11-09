@@ -20,13 +20,13 @@ and open the template in the editor.
             <div class="col-sm-10" style="width: 600px; margin-left: 250px; margin-top: 50px;">
                 <div class="jumbotron">
                     <div class="form-group" style="margin-top: -50px;">
-                        <h1 style="margin-left: 150px;">
-                            Login
+                        <h1 style="margin-left: 100px;">
+                            Password Recovery
                         </h1>   
                        
                     </div>
                     <hr>
-                    <form class="form-horizontal" style="margin-left: 50px;" method="POST" action="process.php">
+                    <form class="form-horizontal" style="margin-left: 50px;" method="POST" action="beforeOTP.php">
                         <div class="form-group input-group">
                             <span class="input-group-addon">
                                 
@@ -35,26 +35,13 @@ and open the template in the editor.
                             </span>
                             <input type="email" class="form-control" name="Email" placeholder="Enter email"  required>                        
                        </div>
-                        <div class="form-group input-group">
-                            <span class="input-group-addon">
-                                
-                                <span class="glyphicon glyphicon-lock"></span>
-                                
-                            </span>
-                            <input type="password" class="form-control" name="Password" placeholder="Enter password" required>                         
-                         </div>
+                        <br><br>
                         <div class="form-group">
-                            <button class="btn btn-primary" style="width: 425px; margin-left: 5px;">Login</button>    
-                            <br><br>
-                            <p class="loginfailure">Invalid Email or Password !</p>
-                            <a href="Enteremail.php"><p>Forgot Password</p></a>
-                         </div>
-                    </form>       
-               </div>
+                            <button class="btn btn-primary" style="width: 425px; margin-left: 5px;">Send OTP</button>  
+                        </div>
+                    </form>
+                </div>
             </div>
-    </div>
-<!--        <?php
-        include 'includes/footer.php'
-        ?>-->
+        </div>
     </body>
 </html>
