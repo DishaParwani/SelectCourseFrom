@@ -81,8 +81,8 @@ $con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con))
         </form>
         </center>
     </div>
-            <?php
+         <!--   <?php
         include 'includes/footer.php'
-        ?>
+        ?> -->
     </body>
 </html>

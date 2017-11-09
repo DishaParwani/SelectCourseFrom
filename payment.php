@@ -46,13 +46,13 @@ and open the template in the editor.
                 <h1 style="color:#48b728">SELECT <br> _________________</h1><br><br>
                 <form action="paymentTest.php" method="post">
                     <label class="radio-inline"><input type="radio" name="payment" value="ccavenue">CC Avenue</label>
-                    <label class="radio-inline"><input type="radio" name="payment" value="dd">Demand Draft</label>
+                    <label class="radio-inline"><input type="radio" name="payment" value="dd">NEFT</label>
                     <input type="submit" name="proceed" value="PROCEED"style="background-color: #48b728; height: 40px; width: 200px; margin: 15px"/><br>
                 </form>
             </div>
         </div>
-        <?php
+       <!-- <?php
             include 'includes/footer.php'
-        ?>
+        ?> -->
     </body>
 </html>

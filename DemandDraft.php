@@ -23,29 +23,29 @@ and open the template in the editor.
        ?> 
         
         <div class="container">
-            <div class="col-sm-15" style="width: 600px; margin-left: 250px; margin-top: 50px;">
+            <div class="col-sm-15" style="width: 600px; margin-left: 250px; margin-top: 20px;">
                 <div class="jumbotron">
                     <div class="form-group" style="margin-top: -50px;">
-                        <h1 style="margin-left: 90px;">
-                            DD Details
+                        <h1 style="margin-left: 60px;">
+                            NEFT Details
                         </h1>      
                     </div>
                     <hr>
                     <blockquote>
- Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
- when an unknown printer took a galleyLorem Ipsum is simply dummy text of the printing.
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
- Lorem Ipsum has been the industry's standard dummy text ever since the 1500
-s, when an unknown printer took a galleyLorem Ipsum is simply dummy text of the printing.
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
- Lorem Ipsum has been the industry's standard dummy text ever sincext of the printing.
+                        <center>    Bank Name: Andra Bank<br>
+                                    Branch: Varthur Branch<br>
+                                    A/C: Bangalore Rural District Chess Association<br>
+                                    A/C No: 249933793247889<br>
+                                    IFSC CODE: AND378623<br>
+                                    Account Type: Current A/C<br><br>
+                                    <a href="index.php"><button type="button" class="btn btn-success">GO HOME</button></a>
+                        </center>
                     </blockquote>
                </div>
             </div>
     </div>
-        <?php
+      <!--  <?php
         include 'includes/footer.php'
-        ?>
+        ?> -->
     </body>
 </html>

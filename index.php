@@ -41,7 +41,7 @@ session_start();
                         </a>
                     </li>
                                         <li>
-                        <a href="ContactUs.php">
+                        <a href="contact.html">
                             Contact Us
                         </a>
                     </li>
@@ -66,8 +66,8 @@ We provide Courses for Engineering and Non Engineering Stream like Computer Scie
 </p>
 <br><br>
 
-        <?php
+       <!-- <?php
         include 'includes/footer.php'
-        ?>
+        ?> -->
     </body>
 </html>

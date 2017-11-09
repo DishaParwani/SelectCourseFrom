@@ -32,7 +32,7 @@ and open the template in the editor.
                        
                     </div>
                     <hr>
-                    <form class="form-horizontal" style="margin-left: 50px;" method="POST" action="AfterReg.php">
+                    <form class="form-horizontal" style="margin-left: 50px;" method="POST" action="index.php">
                         <div class="form-group input-group">
                             <label class="control-label col-sm-6" for="name" style="margin-left: -18px">Card Number:</label>
                             <div class="col-sm-6">
@@ -67,8 +67,8 @@ and open the template in the editor.
                </div>
             </div>
     </div>
-        <!--<?php
+       <!-- <?php
         include 'includes/footer.php'
-        ?>-->
+        ?> -->
     </body>
 </html>
