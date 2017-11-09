@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -45,7 +44,10 @@ and open the template in the editor.
                             <input type="password" class="form-control" name="Password" placeholder="Enter password" required>                         
                          </div>
                         <div class="form-group">
-                            <button class="btn btn-primary" style="width: 425px; margin-left: 5px;">Login</button>                         
+                            <button class="btn btn-primary" style="width: 425px; margin-left: 5px;">Login</button>    
+                            <br><br>
+                            
+                            <a href="OTP.php"><p>Forgot Password</p></a>
                          </div>
                     </form>       
                </div>
