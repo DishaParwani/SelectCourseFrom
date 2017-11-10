@@ -43,7 +43,7 @@ $con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con))
                         </a>
                     </li>
                                         <li>
-                        <a href="ContactUs.php">
+                        <a href="contact.html">
                             Contact Us
                         </a>
                     </li>

@@ -40,7 +40,7 @@ session_start();
                         </a>
                     </li>
                                         <li>
-                        <a href="ContactUs.php">
+                        <a href="contact.html">
                             Contact Us
                         </a>
                     </li>
