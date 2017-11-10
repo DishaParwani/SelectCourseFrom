@@ -21,7 +21,7 @@ if(mysqli_query($conn, $sql)){
     echo "Records inserted successfully.";  
     header('Location: login.php');
 } else{
-    echo "Already Registered!";
+    echo "Please login, your email is already registered!";
 }
  
 // Close connection
