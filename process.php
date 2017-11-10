@@ -37,6 +37,7 @@ if($row['email'] == $Email && $row['dob'] == $Password )
     {
     echo "login success!welcome".$row['email'];
     $_SESSION['loginname']=$row['name'];
+    $_SESSION['emailid']=$row['email'];
     header('Location: index.php');
 }
 else
