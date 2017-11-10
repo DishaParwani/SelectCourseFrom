@@ -20,12 +20,26 @@ and open the template in the editor.
     <body style="background-color: white">
         <?php
         include 'includes/header.php';
+        $email=$_SESSION['emailid'];
             if(isset($_POST['gender'])){
                 $a=$_POST['gender'];
+                if($a=='MALE')
+                    $b='M';
+                else
+                    $b='F';
                 $con=  mysqli_connect("localhost", "root", "", "dbslab");
+                $query1="select * from registration where gender='$b' and email='$email'";
+                $result1=$con->query($query1) or exit($con->errno);
+                $row1=$result1->fetch_assoc();
+                if($row1['gender']==$b)
+                {
                 $query="select * from hostel where htype='$a'";
                 $result=$con->query($query) or exit($con->errno);
-                $flag=1;
+                $flag=1;}
+                else
+                {
+                    header('Location: hostel.php');
+                }
             }
             else
                 $flag=0;
