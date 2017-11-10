@@ -73,10 +73,10 @@ session_start();
     <div class="enroll_form">
         <center>
             <h3><strong>Course Options</strong></h3><br><br>
-            <form class='form-group formwidth' method="post" action="payment.php">
+            <form action="payment.php" method="post">
             <?php            if (mysqli_num_rows($result) >= 1) {
             while ($row = mysqli_fetch_array($result)) {?>
-            <input type="radio"> Professor <?php echo $row['name']?><br>
+            <label class="radio-inline"><input type="radio" name="payment" value="ccavenue">Professor <?php echo $row['name']?></label>
             <?php }} ?>
             <br><br><br>
             <button class="btn btn-primary">Submit</button>
