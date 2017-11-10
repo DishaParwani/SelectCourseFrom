@@ -48,6 +48,11 @@ $con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con))
                             Contact Us
                         </a>
                     </li>
+                                        <li>
+                        <a href="MyProfile.php">
+                            My Account
+                        </a>
+                    </li>
                 </ul>
                 </div>
          </nav>

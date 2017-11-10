@@ -51,6 +51,11 @@ and open the template in the editor.
                             Contact Us
                         </a>
                     </li>
+                                        <li>
+                        <a href="MyProfile.php">
+                            My Account
+                        </a>
+                    </li>
                 </ul>
                 </div>
          </nav>
