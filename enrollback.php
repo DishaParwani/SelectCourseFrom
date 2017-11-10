@@ -1,6 +1,7 @@
 <?php
-$con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con));
 session_start();
+$con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con));
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -50,7 +51,18 @@ session_start();
                 </div>
          </nav>
         <?php 
+        
         $coursename = $_SESSION['coursedata'];
+        $emails=$_SESSION['emailid'];
+        $conn = mysqli_connect("localhost","root","");   //host,username,password
+        mysqli_select_db($conn,"dbslab"); 
+        $sql = "CALL Insert_courseenroll('$emails',$coursename)";
+        if(mysqli_query($conn, $sql)){
+    echo "Records inserted successfully";
+    } else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
+    }
+    
         $query = "select * from dbslab.courses where course_id = $coursename ";
         $result = mysqli_query($con, $query)or die($mysqli_error($con));
         if (mysqli_num_rows($result) >= 1) {

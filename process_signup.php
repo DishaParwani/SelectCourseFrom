@@ -16,9 +16,10 @@ $dob=$_POST['dob'];
 $gender=$_POST['gender'];
 
 
-$sql = "CALL InsertPerson('$Name','$Email',$Phone,'$gender','$dob')";
+$sql = "CALL Insert_Person('$Name','$Email',$Phone,'$gender','$dob')";
 if(mysqli_query($conn, $sql)){
-    echo "Records inserted successfully.";
+    echo "Records inserted successfully.";  
+    header('Location: login.php');
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
 }

@@ -64,7 +64,7 @@ and open the template in the editor.
                         <div class="form-group input-group">                            
                             <label class="control-label col-md-4" for="dob">Birth date:</label>
                             <div class="col-md-8">
-                                <input style="margin-left: 10px" type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy" required>
+                                <input style="margin-left: 10px" type="date" class="form-control" name="dob" placeholder="yyyy-mm-dd" required>
                             </div>
                          </div>
                         <div class="form-group input-group">                            

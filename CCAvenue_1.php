@@ -32,7 +32,7 @@ and open the template in the editor.
                        
                     </div>
                     <hr>
-                    <form class="form-horizontal" style="margin-left: 50px;" method="POST" action="index.php">
+                    <form class="form-horizontal" style="margin-left: 50px;" method="POST" action="paymentverify.php">
                         <div class="form-group input-group">
                             <label class="control-label col-sm-6" for="name" style="margin-left: -18px">Card Number:</label>
                             <div class="col-sm-6">
