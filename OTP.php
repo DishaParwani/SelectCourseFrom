@@ -25,7 +25,7 @@ require 'PHPMailer/PHPMailerAutoload.php';
           $bodyContent = '<h1>Password Recovery Message!</h1>';
           $bodyContent .= '<p>This Email is Sent by because you forgot your password. Your password is : '. $pss. ' </p>';
 
-          $mail->Subject = 'Email From me';
+          $mail->Subject = 'Password Recovery for SelectCourseFrom';
           $mail->Body    = $bodyContent;
 
           if(!$mail->send()) {
