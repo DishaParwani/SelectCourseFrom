@@ -21,6 +21,24 @@ and open the template in the editor.
         <?php
         include './includes/header.php';
         ?>
+        <?php 
+        
+        $hostel = $_POST['blnum'];
+        $_SESSION['hostelname']=$hostel;
+        $hostels=$_SESSION['hostelname'];
+        $emails=$_SESSION['emailid'];
+        $conn = mysqli_connect("localhost","root","");   //host,username,password
+        mysqli_select_db($conn,"dbslab"); 
+        $sql = "CALL Insert_hostelenroll('$emails',$hostels)";
+        if(mysqli_query($conn, $sql)){
+            $flag=1;
+    //echo "Records inserted successfully";
+    } else{
+        $flag=0;
+    echo "Please enroll for course first before registering for hostel";
+    }
+    if($flag==1){
+    ?>
         <div class="left" style="background-color: whitesmoke">
             <div class="header-left">
             </div>
@@ -51,6 +69,9 @@ and open the template in the editor.
                 </form>
             </div>
         </div>
+        <?php
+    }
+    ?>
       <!--  <?php
             include 'includes/footer.php'
         ?> -->

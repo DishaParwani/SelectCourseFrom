@@ -19,6 +19,8 @@ and open the template in the editor.
     </head>
     <body>
         <?php
+        if(isset($_SESSION['emailid']))
+        {
         include 'includes/header.php';
         ?>
         <nav class="navbar ">
@@ -82,7 +84,11 @@ and open the template in the editor.
             </div>
         </div>
         <!-- <?php
-            include 'includes/footer.php'
+            include 'includes/footer.php';
+        }
+ else {
+            header('Location: login.php');
+ }
         ?> -->
     </body>
 </html>

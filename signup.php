@@ -48,29 +48,21 @@ and open the template in the editor.
                          </div>
                         
                         <div class="form-group input-group">                            
-                            <label class="control-label col-sm-4" for="gender">Sex:</label>
-                            <div style="margin-top: 1px" class="col-sm-8" id="radio">
+                            <label class="control-label col-sm-3" for="gender">Sex:</label>
+                            <div style="margin-top: 1px;margin-left: 0px" class="col-sm-9" id="radio">
                                 <input type="radio" name="gender" id="male" value="M" />
                                 <label for="male">Male
                                 </label>
                                 <input type="radio" name="gender" id="female" value="F"/>
                                 <label for="female">Female
                                 </label>  
-                                <input style="margin-left:54.9px" type="radio" name="gender" id="Others" value="O" />
-                                <label for="others">Others
-                                </label>
+                                
                             </div>
                         </div>
                         <div class="form-group input-group">                            
                             <label class="control-label col-md-4" for="dob">Birth date:</label>
                             <div class="col-md-8">
                                 <input style="margin-left: 10px" type="date" class="form-control" name="dob" placeholder="yyyy-mm-dd" required>
-                            </div>
-                         </div>
-                        <div class="form-group input-group">                            
-                            <label class="control-label col-sm-4" for="course">Course:</label>
-                            <div class="col-sm-8">
-                                <input  style="margin-left: 10px"type="text" class="form-control" name="course" placeholder="please enterexact course name" required>
                             </div>
                          </div>
                         

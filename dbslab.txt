@@ -1,0 +1,21 @@
+
+CREATE PROCEDURE `Insert_Person`(IN `name` VARCHAR(50),IN `email` VARCHAR(100),IN `phone` bigint,IN `gender` char,IN `dob` VARCHAR(10)) 
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER insert into registration values(name,email,phone,gender,dob);
+
+
+
+
+CREATE PROCEDURE `Insert_hostelenroll`(IN `email` VARCHAR(50),IN `block_no` INTEGER(11)) 
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER insert into hostel_enroll values(email,block_no,'false');
+
+
+CREATE PROCEDURE `Insert_hostelenroll_afterpay`(IN `email` VARCHAR(50),IN `block_no` INTEGER(11)) 
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER update hostel_enroll set payed='true' where email=`email`;
+
+
+CREATE PROCEDURE `Insert_courseenroll`(IN `email` VARCHAR(50),IN `course_id` INTEGER(11)) 
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER insert into course_enroll values(email,course_id,'false');
+
+CREATE PROCEDURE `Insert_courseenroll_afterpay`(IN `email` VARCHAR(50),IN `course_id` INTEGER(11)) 
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER update course_enroll set payed='true' where email=`email`;
+

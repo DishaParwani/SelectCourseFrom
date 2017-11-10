@@ -1,0 +1,49 @@
+create trigger mul_course_book
+before insert on course_enroll
+for each row
+begin
+DECLARE 
+counter int;
+SET counter =(select count(*)
+from course_enroll
+where email=new.email and
+	course_id=new.course_id);
+if (counter=1)
+then
+SIGNAL SQLSTATE '12345';
+end if;
+end//
+
+
+create trigger not_reg_course
+before insert on hostel_enroll
+for each row
+begin
+DECLARE 
+counter int;
+SET counter =(select count(*)
+from course_enroll
+where email=new.email);
+if (counter=0)
+then
+SIGNAL SQLSTATE '12345';
+end if;
+end//
+
+
+create trigger mul_signup
+before insert on registration
+for each row
+begin
+DECLARE 
+counter int;
+SET counter =(select count(*)
+from registration
+where email=new.email);
+if (counter=1)
+then
+SIGNAL SQLSTATE '12345';
+end if;
+end//
+
+

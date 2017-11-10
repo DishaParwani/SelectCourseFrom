@@ -16,6 +16,8 @@ $con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con))
     </head>
     <body>
         <?php
+        if(isset($_SESSION['emailid']))
+        {
         include ('includes/header.php');
         ?>
          <nav class="navbar ">
@@ -82,7 +84,12 @@ $con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con))
         </center>
     </div>
          <!--   <?php
-        include 'includes/footer.php'
+        include 'includes/footer.php';
+        }
+        else
+        {
+            header('Location: login.php');
+        }
         ?> -->
     </body>
 </html>

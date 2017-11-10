@@ -58,11 +58,14 @@ $con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con))
         mysqli_select_db($conn,"dbslab"); 
         $sql = "CALL Insert_courseenroll('$emails',$coursename)";
         if(mysqli_query($conn, $sql)){
+            $flag=1;
     echo "Records inserted successfully";
     } else{
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
-    }
+        $flag=0;
+    echo "Already registerd for the course!";
     
+    }
+    if($flag==1){
         $query = "select * from dbslab.courses where course_id = $coursename ";
         $result = mysqli_query($con, $query)or die($mysqli_error($con));
         if (mysqli_num_rows($result) >= 1) {
@@ -95,6 +98,9 @@ $con = mysqli_connect("localhost","root","","dbslab") or die(mysqli_error($con))
         </form>
         </center>
     </div>
+    <?php
+    }
+    ?>
          <!--   <?php
         include 'includes/footer.php'
         ?> -->
