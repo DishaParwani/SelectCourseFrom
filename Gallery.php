@@ -45,6 +45,11 @@ session_start();
                             Contact Us
                         </a>
                     </li>
+                                        <li>
+                        <a href="MyProfile.php">
+                            My Account
+                        </a>
+                    </li>
                 </ul>
                 </div>
          </nav>

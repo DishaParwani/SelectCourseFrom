@@ -54,8 +54,13 @@ and open the template in the editor.
                         </a>
                     </li>
                                         <li>
-                        <a href="ContactUs.php">
+                        <a href="Contact.html">
                             Contact Us
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="MyProfile.php">
+                            My Account
                         </a>
                     </li>
                 </ul>
