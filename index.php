@@ -11,7 +11,7 @@ session_start();
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/script.s"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
         <?php
@@ -48,14 +48,16 @@ session_start();
                 </ul>
                 </div>
          </nav>
-        <div id="slideshow">
-            <div class="insideslideshow">
-       <img src="images/image1.jpg">
-   </div>
-            <div class="insideslideshow">
-       <img src="images/image2.jpg">
-   </div>
-</div>
+        <div id="slider">
+            <ul class="slides">
+                <li class="slide"><img src="images/slide1.jpg"</li>
+                <li class="slide"><img src="images/slide2.jpg"</li>
+                <li class="slide"><img src="images/slide3.jpg"</li>
+                <li class="slide"><img src="images/slide4.jpg"</li>
+                <li class="slide"><img src="images/slide5.jpg"</li>
+                <li class="slide"><img src="images/slide1.jpg"</li>
+            </ul>
+        </div>
 
         <h2>About Us</h2>
         <p>SCF is the largest training company in India with over 20 years of experience in the field of education. SCF has a dedicated team of 3 team members which provide the quality trainings across the country. SCF conducts trainings for students from best of the Institutions of the country . Over 25,000 students get trained by us every year. 
